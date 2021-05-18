@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Asap, sans-serif;
+}
+
+body {
+  background-color: #24272e;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  width: 50%;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.menu-btn {
+  position: absolute;
+  margin: 5px;
+  right: 0px;
+  top: 0px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn-burger {
+  height: 4px;
+  width: 40px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-10px);
+}
+.menu-btn-burger::after {
+  transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.score-bord {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 200px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background: #e2584d;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#comp-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.choices {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.choice {
+  border: 4px solid white;
+  margin: 0px 20px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.green-glow {
+  border: 4px solid green;
+  box-shadow: 0 0 10px green;
+  transition: all 0.3s ease;
+}
+
+.red-glow {
+  border: 4px solid red;
+  box-shadow: 0 0 10px red;
+  transition: all 0.3s ease;
+}
+
+.gray-glow {
+  border: 4px solid white;
+  box-shadow: 0 0 10px white;
+  transition: all 0.3s ease;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#messageID {
+  height: 2.5rem;
+  width: 200px;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#messageID:focus {
+    
+}
+
+#sendBtn {
+    height: 2.5rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background: rgb(46, 46, 109);
+}
+
+#sendBtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#messageOut {
+  color: white;
+  font-size: 2rem;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -30px;
+}

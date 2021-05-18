@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="menu-btn"><div class="menu-btn-burger"></div></div>
+    </header>
+
+    <div class="score-bord">
+        <div class="badge" id="user-label">user</div>
+        <div class="badge" id="comp-label">comp</div>
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Paper covers rock, You Win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="p">
+            <img height="70px" src="https://img.icons8.com/color/48/000000/hand.png" alt="paper" />
+        </div>
+        <div class="choice" id="s">
+            <img height="70px" src="https://img.icons8.com/color/48/000000/hand-scissors--v1.png" alt="scissors" />
+        </div>
+        <div class="choice" id="r">
+            <img height="70px" src="https://img.icons8.com/color/48/000000/hand-rock.png" alt="rock" />
+        </div>
+    </div>
+
+    <p id="action-message">Make your move</p>
+
+    <!-- <div class="text">
+        <div class="input">
+            <input type="text" name="message" id="messageID" value="Type something">
+            <button type="button" id="sendBtn">press to send</button>
+        </div>
+        <!-- <hi id="messageOut">Test</hi> -->
+    </div> -->
+    <script src="app.js"></script>
+</body>
+</html>
